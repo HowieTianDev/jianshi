@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">鉴势</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="scada">SCADA</string>
+    <string name="plcdcs">PLC/DCS</string>
+    <string name="other">其他</string>
+    <string name="save">保存</string>
+    <string name="export">导出</string>
+    <string name="logout">登出</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="companyName">
+        <item>请选择厂商</item>
+        <item>西门子</item>
+        <item>施耐德-莫迪康</item>
+        <item>罗克韦尔AB</item>
+        <item>ABB</item>
+        <item>欧姆龙</item>
+        <item>三菱</item>
+        <item>GE</item>
+        <item>松下</item>
+        <item>Beckoff</item>
+        <item>Backman</item>
+        <item>Koyo</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="scadaName">
+        <item>请选择厂商</item>
+        <item>Siemens</item>
+        <item>Rockwell</item>
+        <item>ABB</item>
+        <item>GE</item>
+        <item>三菱</item>
+        <item>Omron</item>
+        <item>安川</item>
+        <item>西可</item>
+        <item>菲尼克斯</item>
+        <item>LS</item>
+    </string-array>
+    <string-array name="virusName">
+        <item>请选择厂商</item>
+        <item>BitDefender</item>
+        <item>Kaspersky</item>
+        <item>F-Secure AntVirus</item>
+        <item>360</item>
+        <item>金山毒霸</item>
+        <item>腾讯管家</item>
+    </string-array>
+    <string-array name="hardwareName">
+        <item>请选择厂商</item>
+        <item>IBM</item>
+        <item>HP</item>
+        <item>Intel</item>
+        <item>戴尔</item>
+        <item>联想</item>
+        <item>曙光</item>
+        <item>宝德</item>
+    </string-array>
+    <string-array name="dbName">
+        <item>请选择厂商</item>
+        <item>Thomson Reuters</item>
+        <item>ProQuest</item>
+        <item>Springer</item>
+        <item>EBSCO</item>
+        <item>Wiley-Blackwell</item>
+        <item>INSPEC</item>
+        <item>SWETS</item>
+    </string-array>
+    <string-array name="dbNameAll">
+        <item>请选择名称</item>
+        <item>Oracle</item>
+        <item>MySQL</item>
+        <item>Microsoft SQL Server</item>
+        <item>MongoDB</item>
+        <item>PostgreSQL</item>
+        <item>DB2</item>
+        <item>Microsoft Access</item>
+        <item>SQLite</item>
+    </string-array>
+    <string-array name="monitorName">
+        <item>请选择厂商</item>
+        <item>三星安防</item>
+        <item>索尼</item>
+        <item>海康威视</item>
+        <item>小拉</item>
+        <item>霍尼韦尔</item>
+        <item>博世安防</item>
+        <item>松下</item>
+        <item>大华</item>
+    </string-array>
+    <string-array name="zutaiName">
+        <item>请选择厂商</item>
+        <item>InTouch</item>
+        <item>Fix</item>
+        <item>Citech</item>
+        <item>Wincc</item>
+        <item>组态王</item>
+        <item>Controx</item>
+        <item>ForceControl</item>
+    </string-array>
+</resources>

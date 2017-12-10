@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.howietian.jianshi.scada.InfoFragment">
+
+
+  <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine"
+      />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="96dp"
+      android:text="SCADA 使用其他软硬件的说明"
+      android:padding="@dimen/textPadding"
+      android:textSize="@dimen/body1"
+      android:textColor="@color/black"
+      android:gravity="center"
+      />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine"
+      />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical">
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine"
+      />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="96dp">
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divideLine" />
+
+      <EditText
+        android:id="@+id/et_other_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="2"
+        android:hint="简述"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine"/>
+  </LinearLayout>
+
+</LinearLayout>
+

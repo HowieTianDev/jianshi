@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.howietian.jianshi.plcdcs.PInfoFragment">
+
+
+  <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="192dp"
+      android:text="硬件"
+      android:textSize="@dimen/body1"
+      android:textColor="@color/black"
+      android:gravity="center" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:text="软件"
+      android:textSize="@dimen/body1"
+      android:textColor="@color/black"
+      android:gravity="center" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="192dp"
+      android:orientation="vertical"
+
+      >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="厂商"
+          android:gravity="center"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <android.support.v7.widget.AppCompatSpinner
+          android:id="@+id/sp_hardware"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_marginLeft="20dp"
+          android:layout_height="match_parent"
+          android:entries="@array/hardwareName"></android.support.v7.widget.AppCompatSpinner>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="名称"
+          android:gravity="center"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <EditText
+          android:id="@+id/et_hard_name"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:layout_marginLeft="20dp"
+          android:background="@null"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="型号"
+          android:gravity="center"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <EditText
+          android:id="@+id/et_hard_model"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:layout_marginLeft="20dp"
+          android:background="@null"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <TextView
+          android:id="@+id/textView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="国内外情况"
+          android:textColor="@color/black"
+          android:textSize="@dimen/body1" />
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/divideLine" />
+
+        <RadioGroup
+          android:id="@+id/rg_hard_where"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:layout_marginLeft="20dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:checkedButton="@id/rb_internal">
+
+          <RadioButton
+            android:id="@+id/rb_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国内"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <RadioButton
+            android:id="@+id/rb_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国外"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+        </RadioGroup>
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="48dp">
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="网管协议"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divideLine" />
+
+      <EditText
+        android:id="@+id/et_soft_agree"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:textSize="@dimen/body1"
+        android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divideLine" />
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+      android:id="@+id/menu_camera"
+      android:icon="@drawable/ic_camera_alt_white_36dp"
+      android:title="扫描"
+      app:showAsAction="always"
+      />
+  <item
+      android:id="@+id/menu_save"
+      android:icon="@drawable/export"
+      android:title="保存"
+      app:showAsAction="always"
+      />
+</menu>

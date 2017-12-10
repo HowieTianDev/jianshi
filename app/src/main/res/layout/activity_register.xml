@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/login_bg"
+  tools:context="com.howietian.jianshi.login.RegisterActivity">
+<View
+  android:layout_width="0dp"
+  android:layout_height="match_parent"
+  android:layout_weight="4"
+  />
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="50dp"
+    android:layout_weight="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_name"
+        style="@style/MyEditTextTheme"
+        android:hint="姓名" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_id_num"
+        style="@style/MyEditTextTheme"
+        android:hint="身份证号码" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:inputType="phone"
+        android:id="@+id/et_phone_num"
+        style="@style/MyEditTextTheme"
+        android:hint="手机号码" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_pwd"
+        android:inputType="textPassword"
+        style="@style/MyEditTextTheme"
+        android:hint="密码（至少六位）" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_pwd_again"
+        style="@style/MyEditTextTheme"
+        android:hint="确认密码"
+        android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_email"
+        android:inputType="textEmailAddress"
+        style="@style/MyEditTextTheme"
+        android:hint="电子邮箱" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_border">
+
+      <EditText
+        android:id="@+id/et_workspace"
+        style="@style/MyEditTextTheme"
+        android:hint="工作单位" />
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/btn_register"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/login_btn_bg"
+      android:text="注册"
+      android:textColor="@color/white" />
+  </LinearLayout>
+</LinearLayout>

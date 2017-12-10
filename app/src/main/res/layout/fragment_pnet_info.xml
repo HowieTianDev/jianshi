@@ -1,0 +1,1479 @@
+<ScrollView android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.howietian.jianshi.plcdcs.PNetInfoFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网与互联网之间的联网情况以及防护措施"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网与办公信息网之间的联网情况以及防护措施"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网与 SCADA 网络联接情况"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网络与不同域PLC、DCS、RTU系统联接情况"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网与全厂时钟系统联接情况"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+        android:text="控制网与其它网络联接情况，包括与无线网络联接情况"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@color/divideLine" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="3"
+      android:orientation="vertical">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divideLine" />
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否相连"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_net_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_no">
+
+            <RadioButton
+              android:id="@+id/rb_yes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_no"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否有防护设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_net_defence"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_have">
+
+            <RadioButton
+              android:id="@+id/rb_have"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="有"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_nohave"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="无"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="VPN 设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_vpn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="品牌和型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="防火墙"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_fire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="品牌和型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="工业防火墙"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_Gfire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IDS 设备"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_ids"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IPS 设备"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_ips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="其他方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_net_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="简述"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否相连"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_office_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_no_office">
+
+
+            <RadioButton
+              android:id="@+id/rb_yes_office"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_no_office"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否有防护设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_office_defence"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_have_office">
+
+            <RadioButton
+              android:id="@+id/rb_have_office"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="有"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_no_have_office"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="无"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="防火墙"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_office_firewall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="品牌和型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="其他方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_office_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="简述"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4">
+
+          <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/textPadding"
+            android:text="上位机上的其他服务和软件"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+              android:id="@+id/cb_qq"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="QQ"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <CheckBox
+              android:id="@+id/cb_vnc"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="远程桌面或远程控制软件（如VNC、TeamViewer 等）"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <CheckBox
+              android:id="@+id/cb_office"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="办公软件"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <CheckBox
+              android:id="@+id/cb_mail"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="邮件"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <CheckBox
+              android:id="@+id/cb_other"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="其它"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </LinearLayout>
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否相连"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_s_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rb_yes">
+
+            <RadioButton
+              android:id="@+id/rb_yes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否有防护设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_s_defence"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rb_have">
+
+            <RadioButton
+              android:id="@+id/rb_have"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="有"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="无"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="VPN 设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_vpn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="品牌和型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="防火墙"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_firewall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="品牌和型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+            android:visibility="gone"
+            >
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="工业防火墙"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_gfirewall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IDS 设备"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_ids"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IPS 设备"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_ips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="品牌和型号"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="其他方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_s_otherway"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:hint="简述"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否联接"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_pdr_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_pdr_yes">
+
+            <RadioButton
+              android:id="@+id/rb_pdr_yes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="联接方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_pdr_connectType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_pdr_wireless">
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="有线"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_pdr_wireless"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="无线"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4">
+
+          <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="隔离方式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center_vertical">
+
+              <CheckBox
+                android:id="@+id/cb_pdr_gfirewall"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="工业防火墙"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body1" />
+
+              <EditText
+                android:id="@+id/et_pdr_gfirewall"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="品牌和型号:"
+                android:background="@null"
+                android:textSize="@dimen/body1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/textPadding" />
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center_vertical">
+
+              <CheckBox
+                android:id="@+id/cb_pdr_net"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="网闸"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body1" />
+
+              <EditText
+                android:id="@+id/et_pdr_net"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/textPadding"
+                android:background="@null"
+                android:hint="品牌和型号:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body1" />
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center_vertical">
+
+              <CheckBox
+                android:id="@+id/cb_pdr_netGuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="网关"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body1" />
+
+              <EditText
+                android:id="@+id/et_pdr_netGuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="品牌和型号:"
+                android:background="@null"
+                android:textSize="@dimen/body1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/textPadding" />
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center_vertical">
+
+              <CheckBox
+                android:id="@+id/cb_pdr_other"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body1" />
+
+              <EditText
+                android:id="@+id/et_pdr_other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="品牌和型号:"
+                android:background="@null"
+                android:textSize="@dimen/body1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/textPadding" />
+            </LinearLayout>
+
+
+          </LinearLayout>
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否联接"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_time_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_time_yes">
+
+            <RadioButton
+              android:id="@+id/rb_time_yes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="联接方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_time_connectType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_time_wireless">
+
+            <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="有线"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_time_wireless"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="无线"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="时钟系统品牌"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_time_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_weight="1">
+
+        <EditText
+          android:id="@+id/et_other_brief"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:layout_marginLeft="20dp"
+          android:background="@null"
+          android:hint="简述"
+          android:textSize="@dimen/body1"
+          android:textColor="@color/black" />
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+</ScrollView>

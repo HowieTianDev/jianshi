@@ -1,0 +1,949 @@
+<ScrollView android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.howietian.jianshi.scada.SoftwareFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:gravity="center"
+        android:text="操作系统"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:gravity="center"
+        android:text="SCADA 软件"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:gravity="center"
+        android:text="杀毒软件"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body1" />
+
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+    </LinearLayout>
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@color/divideLine" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="3"
+      android:orientation="vertical">
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="3">
+
+          <TextView
+              android:id="@+id/textView14"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="类别"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_os_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:checkedButton="@+id/rb_windows">
+
+            <RadioButton
+              android:id="@+id/rb_windows"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Windows"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_linux"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Linux"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_unix"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Unix"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_other"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="其他"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divideLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="版本"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+          <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@color/divideLine" />
+
+          <EditText
+              android:id="@+id/et_os_version"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="20dp"
+              android:layout_weight="2"
+              android:background="@null"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="版本授权"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_os_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_true">
+
+            <RadioButton
+              android:id="@+id/rb_true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="正版"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="非正版"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="最近一次升级时间"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <TextView
+            android:id="@+id/tv_os_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <Button
+            android:id="@+id/btn_os_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:text="选择时间"
+            android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="升级方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_os_upType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:checkedButton="@+id/rb_site">
+
+            <RadioButton
+              android:id="@+id/rb_wireless"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商远程无线方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_dial"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商远程拨号方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_site"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商现场升级"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_self"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="本单位自行升级"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_other_way"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="其他方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="升级内容简单描述"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_os_brief"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="厂商"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_scada"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:entries="@array/scadaName"
+            ></android.support.v7.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="品牌"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_scada_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="版本"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_scada_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="国内外情况"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_scada_where"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_internal">
+
+            <RadioButton
+              android:id="@+id/rb_internal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="国内"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_foreign"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="国外"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="版本授权"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_scada_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_v_true">
+
+            <RadioButton
+              android:id="@+id/rb_v_true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="正版"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_v_false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="非正版"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="最近一次升级时间"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <TextView
+            android:id="@+id/tv_scada_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <Button
+            android:id="@+id/btn_scada_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:text="选择时间"
+            android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="升级方式"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_scada_upType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:checkedButton="@+id/rb_s_site">
+
+            <RadioButton
+              android:id="@+id/rb_s_wireless"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商远程无线方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_s_dial"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商远程拨号方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_s_site"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="集成商现场升级"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_s_self"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="本单位自行升级"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_s_other"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="其他方式"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="升级内容简单描述"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_scada_brief"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="是否安装"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <RadioGroup
+            android:id="@+id/rg_virus_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_no">
+
+            <RadioButton
+              android:id="@+id/rb_yes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+
+            <RadioButton
+              android:id="@+id/rb_no"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="否"
+              android:textColor="@color/black"
+              android:textSize="@dimen/body1" />
+          </RadioGroup>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="厂商"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_virus"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:entries="@array/virusName"
+            ></android.support.v7.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="品牌"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_virus_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divideLine" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="版本"
+            android:gravity="center"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divideLine" />
+
+          <EditText
+            android:id="@+id/et_virus_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="@dimen/body1"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divideLine" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

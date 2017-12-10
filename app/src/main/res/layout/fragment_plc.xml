@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  tools:context="com.howietian.jianshi.plcdcs.PLCFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:title="@string/plcdcs"
+    app:titleTextColor="@color/white"
+    ></android.support.v7.widget.Toolbar>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      >
+
+      <ListView
+        android:id="@+id/lv_plc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divideLine"
+        android:dividerHeight="1dp"
+        >
+
+      </ListView>
+
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@color/divideLine"/>
+    <FrameLayout
+      android:id="@+id/frameLayout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="6"></FrameLayout>
+
+
+  </LinearLayout>
+
+
+
+</LinearLayout>
+
